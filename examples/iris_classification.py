@@ -8,8 +8,8 @@ sys.path.append('../src')
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
-from src.multiclass_svm import MulticlassSVM
-from src.plots import plot_confusion_tables, plot_confusion_mat, \
+from multiclass_svm import MulticlassSVM
+from plots import plot_confusion_tables, plot_confusion_mat, \
     scatter_plot_mat
 
 # number of classes in the Iris dataset
