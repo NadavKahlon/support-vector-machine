@@ -12,7 +12,7 @@ sys.path.insert(
     0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 )
 
-from svm.multiclass_svm import MulticlassSVM
+from svm import MulticlassSVM
 from svm.plots import plot_confusion_tables, plot_confusion_mat, \
     scatter_plot_mat
 
