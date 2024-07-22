@@ -1,15 +1,19 @@
 """
 Example usage of the MulticlassSVM classifier on the Iris dataset.
 """
-import sys
-
-sys.path.append('../src')
 
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
-from multiclass_svm import MulticlassSVM
-from plots import plot_confusion_tables, plot_confusion_mat, \
+import os
+import sys
+
+sys.path.insert(
+    0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+)
+
+from svm.multiclass_svm import MulticlassSVM
+from svm.plots import plot_confusion_tables, plot_confusion_mat, \
     scatter_plot_mat
 
 # number of classes in the Iris dataset
