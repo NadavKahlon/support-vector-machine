@@ -1,7 +1,7 @@
 """
 Example usage of the MulticlassSVM classifier on the Iris dataset.
 """
-
+from matplotlib import pyplot as plt
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
@@ -25,8 +25,8 @@ val_part = 0.2
 test_part = 0.3
 
 # hyperparameter values for choosing between during validtion
-C_list = [0.1, 1, 10, 100]  # (soft-margin-SVM 'C' hyperparameter)
-gamma_list = [0.25, 0.5, 1, 2]  # (rbf kernel 'gamma' hyperparameter)
+C_list = [0.1]  # (soft-margin-SVM 'C' hyperparameter)
+gamma_list = [0.25]  # (rbf kernel 'gamma' hyperparameter)
 
 
 def main():
@@ -138,6 +138,8 @@ def main():
                                   'RBF Kernel MulticlassSVM | C = ' +
                                   str(best_C) + ' | gamma = ' + str(
                               best_gamma)))
+
+    plt.show()
 
 
 if __name__ == '__main__':
