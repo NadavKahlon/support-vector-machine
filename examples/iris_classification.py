@@ -1,6 +1,9 @@
 """
 Example usage of the MulticlassSVM classifier on the Iris dataset.
 """
+import sys
+
+sys.path.append('../src')
 
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
