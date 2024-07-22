@@ -4,7 +4,8 @@ setup(
     name='support-vector-machine',
     packages=find_packages(include=['svm']),
     install_requires=[
-        'numpy'
+        'numpy',
+        'matplotlib'
     ],
     extras_require={
         'examples': ['scikit-learn']
